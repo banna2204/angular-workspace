@@ -1,7 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HelloWorld } from 'tools';
-// import { CustomButton } from '../../../shared/components/custom-button/custom-button';
 
 @Component({
   selector: 'app-root',

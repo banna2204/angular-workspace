@@ -2,14 +2,13 @@
   "name": "kraken",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:first-app": "node dist/first-app/server/server.mjs",
-    "serve:ssr:second-app": "node dist/second-app/server/server.mjs"
+    "start:first": "ng serve first-app",
+    "start:second": "ng serve second-app",
+    "watch:tools": "ng build tools --watch --configuration development",
+    "dev:first": "concurrently \"npm run watch:tools\" \"npm run start:first\"",
+    "dev:second": "concurrently \"npm run watch:tools\" \"npm run start:second\""
   },
+
   "private": true,
   "packageManager": "npm@11.17.0",
   "dependencies": {

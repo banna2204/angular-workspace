@@ -15,7 +15,7 @@
     "target": "ES2022",
     "module": "preserve",
     "paths": {
-      "tools": ["./dist/tools", "./dist/tools"]
+      "tools": ["./dist/tools", "./dist/tools"],
     }
   },
   "angularCompilerOptions": {
