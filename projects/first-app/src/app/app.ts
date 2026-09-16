@@ -15,4 +15,8 @@ export class App {
   ngOnInit() {
     this.title.set(this.helloWorld.getMessage());
   }
+
+  redirectToSecondApp() {
+    window.location.href = 'http://localhost:4201/';
+  }
 }
